@@ -1,15 +1,20 @@
+# Adds the numbers
 def Add(num1, num2):
     return num1 + num2
 
+# Subtracts the numbers
 def Subtract(num1, num2):
     return num1 - num2
 
+# Multiply the NUmnbers
 def Multiply(num1, num2):
     return num1 * num2
 
+# Divides the Numbers
 def Divide(num1, num2):
     return num1 / num2
 
+# Want to try again
 def Retry():
     if input("Retry? (y/n)") == "y":
         main()
@@ -17,7 +22,7 @@ def Retry():
         print("Goodbye")
         exit()
 
-
+# Runs the Main System
 def main():
     print("Provide a number: ", end="")
     num1 = int(input())
