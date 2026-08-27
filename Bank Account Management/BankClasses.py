@@ -1,6 +1,9 @@
 import BankAccounts as BA
 
+
 class Transaction:
+
+    # Withdraws a certain amount of money from your balance
     def withdraw(self, amount):
         if amount > BA.self.balance:
             return "Insufficient funds"
@@ -12,6 +15,7 @@ class Transaction:
         else:
             return "Error in withdrawal"
 
+    # Deposits a certain amount of money to your balance
     def deposit(self, amount):
         if amount <= 0:
             return "Invalid deposit amount"
