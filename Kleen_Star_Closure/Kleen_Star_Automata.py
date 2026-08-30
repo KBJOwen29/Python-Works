@@ -47,6 +47,7 @@ def print_automaton(automaton):
 # User Input Section
 # ============================
 
+# Simple Functionalities dor rumning the system
 print("Enter states (comma separated):")
 states = set(input().strip().split(','))   # Input states
 print("Enter alphabet (comma separated):")
