@@ -1,3 +1,4 @@
+# function for running the algorithm
 def knapsack(values, weights, capacity):
     n = len(values)
     dp = [[0 for _ in range(capacity + 1)] for _ in range(n + 1)]
@@ -12,6 +13,7 @@ def knapsack(values, weights, capacity):
 
     return dp[n][capacity], dp
 
+# Main System
 def main():
     print("=== 0/1 Knapsack Problem Solver ===")
     print("This program uses dynamic programming to solve the 0/1 Knapsack Problem.")
@@ -43,6 +45,6 @@ def main():
 
     except ValueError:
         print("Invalid input. Please enter integers only.")
-
+# Calls Main System
 if __name__ == "__main__":
     main()
